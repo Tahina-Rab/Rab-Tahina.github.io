@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Haja Tahina Rabary — Portfolio</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#f7f8fa;--surface:#fff;--text:#14181f;--muted:#5a6472;--line:#e3e7ee;--accent:#1d6fe8;--accent2:#0fa88a}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d1117;--surface:#151b24;--text:#e8edf4;--muted:#93a0b2;--line:#252e3b;--accent:#5b9bff;--accent2:#35d0b0}}
+:root[data-theme="dark"]{--bg:#0d1117;--surface:#151b24;--text:#e8edf4;--muted:#93a0b2;--line:#252e3b;--accent:#5b9bff;--accent2:#35d0b0}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.6}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0;font-size:.9rem}
+nav a{color:var(--muted);text-decoration:none;margin-left:16px}
+nav a:hover{color:var(--accent)}
+nav b{letter-spacing:.04em}
+.hero{padding:56px 0 40px}
+.tag{display:inline-block;font-size:.8rem;color:var(--accent2);border:1px solid var(--line);padding:4px 12px;border-radius:99px;background:var(--surface)}
+h1{font-size:clamp(2rem,7vw,3.4rem);line-height:1.1;margin:18px 0 14px;letter-spacing:-.02em}
+h1 span{background:linear-gradient(90deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--muted);max-width:620px;font-size:1.08rem}
+.btns{display:flex;gap:12px;flex-wrap:wrap;margin-top:26px}
+.btn{padding:11px 20px;border-radius:10px;text-decoration:none;font-weight:600;font-size:.95rem;border:1px solid var(--line);color:var(--text);background:var(--surface)}
+.btn.p{background:var(--accent);border-color:var(--accent);color:#fff}
+section{padding:44px 0;border-top:1px solid var(--line)}
+h2{font-size:1.5rem;margin:0 0 22px;letter-spacing:-.01em}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{margin:0 0 6px;font-size:1.05rem}
+.card p{margin:0 0 12px;color:var(--muted);font-size:.93rem}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{font-size:.76rem;padding:3px 10px;border-radius:99px;background:var(--bg);border:1px solid var(--line);color:var(--muted)}
+.feat{border-color:var(--accent);background:linear-gradient(135deg,var(--surface),var(--bg))}
+.feat .k{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-weight:700}
+.feat h3{font-size:1.3rem;margin:6px 0 10px}
+.feat ul{margin:0 0 14px;padding-left:18px;color:var(--muted);font-size:.94rem}
+.tl{border-left:2px solid var(--line);margin-left:6px}
+.tl div{position:relative;padding:0 0 22px 22px}
+.tl div::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--accent)}
+.tl small{color:var(--accent2);font-weight:600}
+.tl h3{margin:2px 0 4px;font-size:1.02rem}
+.tl p{margin:0;color:var(--muted);font-size:.93rem}
+.two{display:grid;gap:36px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+footer{padding:36px 0 28px;text-align:center;color:var(--muted);font-size:.85rem;border-top:1px solid var(--line)}
+#lg{margin-left:16px;background:var(--surface);color:var(--text);border:1px solid var(--line);border-radius:8px;padding:4px 10px;font-weight:700;font-size:.8rem;cursor:pointer}
+</style>
+</head>
+<body>
+<div class="wrap">
+<nav><b>H.T. RABARY</b><div><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a><button id="lg" type="button">FR</button></div></nav>
+
+<header class="hero">
+<span class="tag">Open to international opportunities</span>
+<h1>Hi, I’m Haja Tahina — <span>engineer &amp; developer</span></h1>
+<p class="lead">Radio infrastructure (IRE) maintenance engineer at ASECNA with a Master’s in Applied Mathematics for Computer Science. I build reliable systems at the crossroads of electronics, software and numerical computing.</p>
+<div class="btns"><a class="btn p" href="#projects">View my work</a><a class="btn" href="mailto:tah.haja3103@gmail.com">Contact me</a></div>
+</header>
+
+<section id="skills">
+<h2>Skills</h2>
+<div class="grid">
+<div class="card"><h3>Programming</h3><div class="chips"><span class="chip">C++</span><span class="chip">JavaScript</span><span class="chip">HTML / CSS</span><span class="chip">Bootstrap</span><span class="chip">MATLAB</span></div></div>
+<div class="card"><h3>Embedded &amp; Electronics</h3><div class="chips"><span class="chip">Arduino</span><span class="chip">Microcontrollers</span><span class="chip">Electronics</span><span class="chip">Aeronautical telecom</span></div></div>
+<div class="card"><h3>Math &amp; Data</h3><div class="chips"><span class="chip">Numerical analysis</span><span class="chip">Statistics</span><span class="chip">Probability</span></div></div>
+<div class="card"><h3>Tools &amp; Languages</h3><div class="chips"><span class="chip">Linux</span><span class="chip">Windows</span><span class="chip">Visual Studio</span><span class="chip">French (native-level)</span><span class="chip">English (good)</span><span class="chip">German (basic)</span></div></div>
+</div>
+</section>
+
+<section id="projects">
+<h2>Projects</h2>
+<div class="card feat">
+<span class="k">Featured · End-of-study project (EAMAC, 2025)</span>
+<h3>Automatic Elevation &amp; Azimuth Positioning System</h3>
+<ul>
+<li><b>Context:</b> End-of-study project at EAMAC (Electronics &amp; Computer Science): a real prototype, built from design to working device.</li>
+<li><b>Problem:</b> Setting a surface to a precise elevation and azimuth angle by hand is slow and imprecise; the goal was to automate it and control it remotely.</li>
+<li><b>Approach:</b> Mechanical support driven by a servo motor and a stepper motor, controlled by an ESP32 microcontroller, with a 7-segment display showing the angles.</li>
+<li><b>Result:</b> Working prototype with automatic angle setting and Bluetooth remote control. [Add measured accuracy / test results]</li>
+</ul>
+<div class="chips"><span class="chip">ESP32</span><span class="chip">Servo motor</span><span class="chip">Stepper motor</span><span class="chip">Bluetooth</span><span class="chip">7-segment display</span><span class="chip">C++</span></div>
+</div>
+<br>
+<div class="grid">
+<div class="card"><h3>[Web project name]</h3><p>[One-line description: what it does and for whom.]</p><div class="chips"><span class="chip">JavaScript</span><span class="chip">HTML/CSS</span><span class="chip">Bootstrap</span></div></div>
+<div class="card"><h3>[Embedded project name]</h3><p>[One-line description of the Arduino / microcontroller system you built.]</p><div class="chips"><span class="chip">Arduino</span><span class="chip">C++</span><span class="chip">Electronics</span></div></div>
+<div class="card"><h3>[Software / numerical project]</h3><p>[One-line description of the application or simulation.]</p><div class="chips"><span class="chip">C++</span><span class="chip">MATLAB</span></div></div>
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience &amp; Education</h2>
+<div class="two">
+<div class="tl">
+<div><small>Oct 2025 – Present</small><h3>Maintenance Engineer, Radio Infrastructure (IRE) · ASECNA</h3><p>Supervise and maintain ground equipment for air navigation; ensure continuous, optimal operation of all ATS (Air Traffic Service) systems.</p></div>
+<div><small>2016 – Oct 2025</small><h3>Telecommunications Operator · ASECNA</h3><p>Supervised and ensured efficient routing of aeronautical messages through the Automatic Message Switching Centre (CAT).</p></div>
+</div>
+<div class="tl">
+<div><small>2026</small><h3>Master 2 — Applied Maths for Computer Science</h3><p>Numerical computing option · University of Antananarivo</p></div>
+<div><small>2025</small><h3>Master 1 equivalent — Electronics &amp; Computer Science</h3><p>EAMAC (African School of Meteorology and Civil Aviation)</p></div>
+<div><small>2015</small><h3>Aeronautical Telecommunications Technician</h3><p>EAMAC</p></div>
+<div><small>2014</small><h3>Double degree — Pure &amp; Applied Mathematics</h3><p>Probability &amp; Statistics · University of Antananarivo</p></div>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<h2>Let’s talk</h2>
+<p class="lead">Based in Antananarivo, Madagascar — available for remote and international roles.</p>
+<div class="btns"><a class="btn p" href="mailto:tah.haja3103@gmail.com">tah.haja3103@gmail.com</a></div>
+</section>
+</div>
+<footer>© 2026 Haja Tahina Rabary</footer>
+<script>
+var FR={
+"Featured · End-of-study project (EAMAC, 2025)":"À la une · Projet de fin d’études (EAMAC, 2025)",
+"Automatic Elevation & Azimuth Positioning System":"Système de calage automatique en site et en azimut",
+"End-of-study project at EAMAC (Electronics & Computer Science): a real prototype, built from design to working device.":"Projet de fin d’études à l’EAMAC (Électronique et informatique) : un prototype réel, de la conception à l’appareil fonctionnel.",
+"Setting a surface to a precise elevation and azimuth angle by hand is slow and imprecise; the goal was to automate it and control it remotely.":"Régler une surface à un angle précis en site et en azimut à la main est lent et imprécis ; l’objectif était de l’automatiser et de la commander à distance.",
+"Mechanical support driven by a servo motor and a stepper motor, controlled by an ESP32 microcontroller, with a 7-segment display showing the angles.":"Support mécanique entraîné par un servomoteur et un moteur pas à pas, piloté par un microcontrôleur ESP32, avec un afficheur 7 segments indiquant les angles.",
+"Working prototype with automatic angle setting and Bluetooth remote control. [Add measured accuracy / test results]":"Prototype fonctionnel avec calage automatique des angles et commande à distance par Bluetooth. [Ajouter la précision mesurée / résultats des tests]",
+"Servo motor":"Servomoteur","Stepper motor":"Moteur pas à pas","7-segment display":"Afficheur 7 segments",
+"Projects":"Projets","Experience":"Expérience","Contact":"Contact",
+"Open to international opportunities":"Ouvert aux opportunités internationales",
+"Hi, I’m Haja Tahina —":"Bonjour, je suis Haja Tahina —",
+"engineer & developer":"ingénieur et développeur",
+"Radio infrastructure (IRE) maintenance engineer at ASECNA with a Master’s in Applied Mathematics for Computer Science. I build reliable systems at the crossroads of electronics, software and numerical computing.":"Cadre maintenancier Infrastructure Radioélectrique (IRE) à l’ASECNA, titulaire d’un Master en Mathématiques appliquées à l’informatique. Je conçois des systèmes fiables à la croisée de l’électronique, du logiciel et du calcul numérique.",
+"View my work":"Voir mes réalisations","Contact me":"Me contacter",
+"Skills":"Compétences","Programming":"Programmation","Embedded & Electronics":"Systèmes embarqués et électronique","Math & Data":"Maths et données","Tools & Languages":"Outils et langues",
+"Aeronautical telecom":"Télécoms aéronautiques","Electronics":"Électronique","Numerical analysis":"Analyse numérique","Statistics":"Statistiques","Probability":"Probabilités","Numerical computing":"Calcul numérique",
+"French (native-level)":"Français (excellent)","English (good)":"Anglais (bon)","German (basic)":"Allemand (basique)",
+"Featured · Master’s thesis (2026)":"À la une · Mémoire de Master (2026)",
+"[Thesis title — to be completed]":"[Titre du mémoire — à compléter]",
+"Context:":"Contexte :",
+"Master 2, Applied Mathematics for Computer Science — numerical computing, University of Antananarivo.":"Master 2, Mathématiques appliquées à l’informatique — calcul numérique, Université d’Antananarivo.",
+"Problem:":"Problème :","[What problem did you solve?]":"[Quel problème as-tu résolu ?]",
+"Approach:":"Approche :","[Methods, algorithms, tools]":"[Méthodes, algorithmes, outils]",
+"Result:":"Résultat :","[Key results, figures, impact]":"[Résultats clés, chiffres, impact]",
+"[Web project name]":"[Nom du projet web]","[One-line description: what it does and for whom.]":"[Description en une ligne : ce qu’il fait et pour qui.]",
+"[Embedded project name]":"[Nom du projet embarqué]","[One-line description of the Arduino / microcontroller system you built.]":"[Description en une ligne du système Arduino / microcontrôleur réalisé.]",
+"[Software / numerical project]":"[Projet logiciel / numérique]","[One-line description of the application or simulation.]":"[Description en une ligne de l’application ou de la simulation.]",
+"Experience & Education":"Expérience et formation",
+"Oct 2025 – Present":"Oct 2025 – Aujourd’hui",
+"Maintenance Engineer, Radio Infrastructure (IRE) · ASECNA":"Cadre maintenancier Infrastructure Radioélectrique (IRE) · ASECNA",
+"Supervise and maintain ground equipment for air navigation; ensure continuous, optimal operation of all ATS (Air Traffic Service) systems.":"Supervision et maintenance des équipements au sol pour la navigation aérienne ; continuité et fonctionnement optimal de tous les équipements ATS (Air Traffic Service).",
+"2016 – Oct 2025":"2016 – Oct 2025",
+"Telecommunications Operator · ASECNA":"Opérateur en télécommunications · ASECNA",
+"Supervised and ensured efficient routing of aeronautical messages through the Automatic Message Switching Centre (CAT).":"Supervision et acheminement efficace des messages aéronautiques via le Centre Automatique de Transit des messages (CAT).",
+"Master 2 — Applied Maths for Computer Science":"Master 2 — Mathématiques appliquées à l’informatique",
+"Numerical computing option · University of Antananarivo":"Option calcul numérique · Université d’Antananarivo",
+"Master 1 equivalent — Electronics & Computer Science":"Équivalent Master 1 — Électronique et informatique",
+"EAMAC (African School of Meteorology and Civil Aviation)":"EAMAC (École Africaine de la Météorologie et de l’Aviation Civile)",
+"Aeronautical Telecommunications Technician":"Technicien en télécommunications aéronautiques",
+"Double degree — Pure & Applied Mathematics":"Double maîtrise — Mathématiques pures et appliquées",
+"Probability & Statistics · University of Antananarivo":"Probabilités et statistiques · Université d’Antananarivo",
+"Let’s talk":"Parlons-en",
+"Based in Antananarivo, Madagascar — available for remote and international roles.":"Basé à Antananarivo, Madagascar — disponible pour des postes à distance et à l’international.",
+"© 2026 Haja Tahina Rabary":"© 2026 Haja Tahina Rabary"
+};
+(function(){
+var nodes=[],orig=new Map(),lang='en';
+var w=document.createTreeWalker(document.body,NodeFilter.SHOW_TEXT);
+while(w.nextNode()){var n=w.currentNode;if(n.parentNode.tagName==='SCRIPT'||n.parentNode.tagName==='BUTTON')continue;var t=n.nodeValue.trim();if(FR[t]){nodes.push(n);orig.set(n,n.nodeValue);}}
+function set(l){lang=l;nodes.forEach(function(n){var o=orig.get(n),t=o.trim();n.nodeValue=l==='fr'?o.replace(t,FR[t]):o;});
+document.documentElement.lang=l;document.getElementById('lg').textContent=l==='fr'?'EN':'FR';
+try{localStorage.setItem('lang',l);}catch(e){}}
+document.getElementById('lg').addEventListener('click',function(){set(lang==='en'?'fr':'en');});
+var s=null;try{s=localStorage.getItem('lang');}catch(e){}
+if(s==='fr')set('fr');
+})();
+</script>
+</body>
+</html>
